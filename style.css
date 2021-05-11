@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display';
+}
+
+.box {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    width: 33.33333%;
+    min-height: 450px;
+    background-color: hsl(31, 77%, 52%);
+    flex-grow: 1;
+}
+
+.item2 {
+    width: 33.33333%;
+    min-height: 450px;
+    background-color: hsl(184, 100%, 22%);
+    flex-grow: 1;
+}
+
+.item3 {
+    width: 33.33333%;
+    min-height: 450px;
+    background-color: hsl(179, 100%, 13%);
+    flex-grow: 1;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: 'Lexend Deca';
+}
