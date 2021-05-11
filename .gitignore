@@ -4,6 +4,12 @@
 #####################################################
 *.sketch
 *.fig
+README-static.md
+style-guide.md
+/design
+/images
+
+
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
