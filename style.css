@@ -11,7 +11,7 @@ body {
 
 .box {
     color: hsla(0, 0%, 100%, 0.75);
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -20,23 +20,26 @@ body {
 
 .item1 {
     width: 33.33333%;
-    min-height: 450px;
+    min-height: 350px;
     background-color: hsl(31, 77%, 52%);
     flex-grow: 1;
+    padding: 2rem 3rem 2rem 2rem;
 }
 
 .item2 {
     width: 33.33333%;
-    min-height: 450px;
+    min-height: 350px;
     background-color: hsl(184, 100%, 22%);
     flex-grow: 1;
+    padding: 2rem 3rem 2rem 2rem;
 }
 
 .item3 {
     width: 33.33333%;
-    min-height: 450px;
+    min-height: 350px;
     background-color: hsl(179, 100%, 13%);
     flex-grow: 1;
+    padding: 2rem 3rem 2rem 2rem;
 }
 
 .title {
@@ -45,4 +48,24 @@ body {
 
 .text {
     font-family: 'Lexend Deca';
+    opacity: .8;
+    line-height: 1.5rem;
+}
+
+.btn {
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);    
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.item1 .btn {
+    color: hsl(31, 77%, 52%);
+}
+.item2 .btn {
+    color: hsl(184, 100%, 22%);
+}
+.item3 .btn {
+    color: hsl(179, 100%, 13%);
 }
