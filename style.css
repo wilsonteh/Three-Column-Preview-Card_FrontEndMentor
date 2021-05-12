@@ -1,6 +1,14 @@
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --lightGray: hsl(0, 0%, 95%);
+}
+
 html, body {
     height: 100%;
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--lightGray);
 }
 
 body {
@@ -13,7 +21,7 @@ body {
 }
 
 .box {
-    color: hsla(0, 0%, 100%, 0.75);
+    color: var(--transparentWhite);
     width: 60%;
     margin: auto;
     display: flex;
@@ -29,21 +37,21 @@ body {
 
 .item1 {
     min-height: 350px;
-    background-color: hsl(31, 77%, 52%);
+    background-color: var(--brightOrange);
     flex-grow: 1;
     padding: 3rem;
 }
 
 .item2 {
     min-height: 350px;
-    background-color: hsl(184, 100%, 22%);
+    background-color: var(--darkCyan);
     flex-grow: 1;
     padding: 3rem;
 }
 
 .item3 {
     min-height: 350px;
-    background-color: hsl(179, 100%, 13%);
+    background-color: var(--veryDarkCyan);
     flex-grow: 1;
     padding: 3rem;
 }
@@ -67,7 +75,7 @@ svg {
 
 .btn {
     font-family: 'Lexend Deca';
-    background-color: hsl(0, 0%, 95%);    
+    background-color: var(--lightGray);    
     border: none;
     padding: 0.8rem 1.8rem 0.8rem 1.8rem;
     border-radius: 2rem;
@@ -75,28 +83,28 @@ svg {
 }
 
 .item1 .btn {
-    color: hsl(31, 77%, 52%);
+    color: var(--brightOrange);
 }
 .item2 .btn {
-    color: hsl(184, 100%, 22%);
+    color: var(--darkCyan);
 }
 .item3 .btn {
-    color: hsl(179, 100%, 13%);
+    color: var(--veryDarkCyan);
 }
 
 .btn:hover {
-    color: hsl(0, 0%, 95%);
-    box-shadow: 0px 0px 0px 2px hsl(0, 0%, 95%) inset;
+    color: var(--lightGray);
+    box-shadow: 0px 0px 0px 2px var(--lightGray) inset;
     box-sizing: content-box;
 }
 .item1 .btn:hover {
-    background: hsl(31, 77%, 52%);
+    background: var(--brightOrange);
 }
 .item2 .btn:hover {
-    background: hsl(184, 100%, 22%);
+    background: var(--darkCyan);
 }
 .item3 .btn:hover {
-    background: hsl(179, 100%, 13%);
+    background: var(--veryDarkCyan);
 }
 
 @media (max-width: 768px) {
