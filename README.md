@@ -11,7 +11,7 @@ Users should be able to:
 - See hover states on buttons
 
 ### Links
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/3-columns-preview-cards-components-yOI6387a1)
 - [Live Site URL](https://wilsonteh.github.io/Three-Column-Preview-Card_FrontEndMentor/)
 
 
