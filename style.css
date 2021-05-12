@@ -1,8 +1,11 @@
 html, body {
     height: 100%;
+    background-color: hsl(0, 0%, 95%);
 }
 
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -11,38 +14,47 @@ body {
 
 .box {
     color: hsla(0, 0%, 100%, 0.75);
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 200px;
+    right: 200px;
+    left: 200px;
+    bottom: 200px;
 }
 
 .item1 {
-    width: 33.33333%;
     min-height: 350px;
     background-color: hsl(31, 77%, 52%);
     flex-grow: 1;
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 3rem;
 }
 
 .item2 {
-    width: 33.33333%;
     min-height: 350px;
     background-color: hsl(184, 100%, 22%);
     flex-grow: 1;
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 3rem;
 }
 
 .item3 {
-    width: 33.33333%;
     min-height: 350px;
     background-color: hsl(179, 100%, 13%);
     flex-grow: 1;
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 3rem;
+}
+
+svg {
+    transform: scale(0.8, 0.8);
 }
 
 .title {
+    color: white;
+    opacity: 0.9;
     text-transform: uppercase;
 }
 
@@ -50,14 +62,16 @@ body {
     font-family: 'Lexend Deca';
     opacity: .8;
     line-height: 1.5rem;
+    font-size: 0.8em;
 }
 
 .btn {
     font-family: 'Lexend Deca';
     background-color: hsl(0, 0%, 95%);    
     border: none;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
 }
 
 .item1 .btn {
@@ -68,4 +82,31 @@ body {
 }
 .item3 .btn {
     color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    color: hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 0px 2px hsl(0, 0%, 95%) inset;
+    box-sizing: content-box;
+}
+.item1 .btn:hover {
+    background: hsl(31, 77%, 52%);
+}
+.item2 .btn:hover {
+    background: hsl(184, 100%, 22%);
+}
+.item3 .btn:hover {
+    background: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        width: 80%;
+    }
 }
