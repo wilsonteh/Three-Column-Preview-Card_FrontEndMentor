@@ -127,14 +127,16 @@ svg {
     .box {
         width: 80%;
     }  
+    .item1, .item2, .item3 {
+        padding: 1.5rem;
+    }
 }
-
 
 @media (max-width: 768px) {
     .box {
         flex-direction: column;
         width: 50%;
-    }
+    }    
 }
 
 @media (max-width: 576px) {
